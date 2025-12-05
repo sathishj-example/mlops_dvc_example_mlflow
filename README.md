@@ -1,9 +1,9 @@
-# MLOps DVC + MLflow Demo
+# MLOps DVC + MLflow 
 
-This project demonstrates how to use **DVC (Data Version Control)** together with **MLflow** for experiment tracking and artifact versioning.
+This example is about how to use **DVC (Data Version Control)** together with **MLflow** for experiment tracking and artifact versioning.
 This fixed version avoids DVC output duplication by using separate metric files for train and evaluate stages.
 
-## What this demo shows
+## What this example shows
 
 - Reproducible pipeline managed by DVC (data + models tracked as artifacts).
 - Logging run parameters, metrics and model artifacts to MLflow (local `mlruns/` folder).
@@ -57,5 +57,5 @@ dvc push
 
 ## Notes
 
-- MLflow stores runs and artifacts in the `mlruns/` directory by default in this demo.
+- MLflow stores runs and artifacts in the `mlruns/` directory by default in this example.
 - DVC handles large files (data, models) and their versions; MLflow stores experiment metadata and model artifacts.
